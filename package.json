@@ -18,5 +18,9 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jane-doe/node-example/issues"
+  },
+  "dependencies": {
+    "express": "^4.9.4",
+    "logfmt": "^1.2.0"
   }
 }
