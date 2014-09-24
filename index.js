@@ -10,6 +10,13 @@ app.get('/', function(req, res) {
   });
 });
 
+
+app.post('/', function(req, res) {
+  fs.readFile(__dirname + '/public/index.html', 'utf8', function(err, text){
+  		res.send(text);
+  });
+});
+
 app.listen(app.get('port'), function() {
   console.log("Node app is running at localhost:" + app.get('port'))
 })
